@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Olena — Product Photography &amp; Retouch</title>
+  <meta name="description" content="Product photography and high-end retouch portfolio by Olena.">
+  <meta name="theme-color" content="#16100c">
+  <meta property="og:title" content="Olena — Product Photography & Retouch">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/full/07.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <a href="#top" class="logo" data-i18n="name">Olena</a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#works" data-i18n="nav.works">Works</a>
+      <a href="#approach" data-i18n="nav.approach">Approach</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header__right">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" class="lang__btn" data-lang="en" aria-pressed="true">EN</button>
+        <span class="lang__sep">/</span>
+        <button type="button" class="lang__btn" data-lang="uk" aria-pressed="false">UA</button>
+      </div>
+      <button type="button" class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-label="Intro">
+      <div class="hero__strips">
+        <div class="strip" data-speed="0.10"><img src="images/full/01.jpg" alt="" fetchpriority="high"></div>
+        <div class="strip" data-speed="-0.06"><img src="images/full/07.jpg" alt=""></div>
+        <div class="strip" data-speed="0.14"><img src="images/full/06.jpg" alt=""></div>
+        <div class="strip" data-speed="-0.04"><img src="images/full/08.jpg" alt=""></div>
+      </div>
+      <div class="hero__shade"></div>
+
+      <div class="hero__content">
+        <span class="hero__counter mono">01 / 08</span>
+        <h1 class="hero__title" data-i18n="name">Olena</h1>
+        <p class="hero__meta mono" data-i18n="hero.meta">Olena — Product photographer &amp; retoucher — Ukraine — 2026</p>
+      </div>
+
+      <a href="#works" class="hero__scroll mono" data-i18n="hero.scroll">Scroll ↓</a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span data-i18n="marquee">Beauty — Fragrance — Jewellery — Lingerie — Skincare — Retouch — Still life — </span>
+        <span data-i18n="marquee">Beauty — Fragrance — Jewellery — Lingerie — Skincare — Retouch — Still life — </span>
+      </div>
+    </div>
+
+    <!-- ============ ACT I — WORKS ============ -->
+    <section class="works" id="works">
+      <div class="act reveal">
+        <span class="act__num">I</span>
+        <div>
+          <p class="mono act__label" data-i18n="works.act">Act I</p>
+          <h2 class="act__title" data-i18n="works.title">Selected works</h2>
+          <p class="mono act__sub" data-i18n="works.sub">Light · Texture · Detail</p>
+        </div>
+      </div>
+
+      <div class="grid" id="grid">
+        <!-- items are rendered from js/main.js (WORKS array) -->
+      </div>
+    </section>
+
+    <!-- ============ FEATURE (full bleed) ============ -->
+    <section class="feature" aria-label="Feature">
+      <div class="feature__img"><img src="images/full/07.jpg" alt="" loading="lazy"></div>
+      <div class="feature__text reveal">
+        <p class="mono" data-i18n="feature.label">No. 07 — Colour study</p>
+        <h2 data-i18n-html="feature.title">Colour is a <em>character</em>,<br>not a background.</h2>
+      </div>
+    </section>
+
+    <!-- ============ ACT II — APPROACH ============ -->
+    <section class="approach" id="approach">
+      <div class="float" aria-hidden="true">
+        <img class="float__img f1" src="images/thumb/02.jpg" alt="" loading="lazy" data-speed="0.18">
+        <img class="float__img f2" src="images/thumb/04.jpg" alt="" loading="lazy" data-speed="-0.12">
+        <img class="float__img f3" src="images/thumb/05.jpg" alt="" loading="lazy" data-speed="0.25">
+        <img class="float__img f4" src="images/thumb/03.jpg" alt="" loading="lazy" data-speed="-0.2">
+        <img class="float__img f5" src="images/thumb/06.jpg" alt="" loading="lazy" data-speed="0.1">
+        <img class="float__img f6" src="images/thumb/01.jpg" alt="" loading="lazy" data-speed="-0.15">
+      </div>
+
+      <div class="approach__inner reveal">
+        <p class="mono act__label" data-i18n="approach.act">Act II — Approach</p>
+        <blockquote class="quote" data-i18n-html="approach.quote">A product photograph is finished only when the <em>viewer</em> wants to touch it</blockquote>
+        <p class="mono act__sub" data-i18n="approach.sub">Shape · Reflection · Surface</p>
+      </div>
+    </section>
+
+    <!-- ============ ACT III — ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="act reveal">
+        <span class="act__num">III</span>
+        <div>
+          <p class="mono act__label" data-i18n="about.act">Act III</p>
+          <h2 class="act__title" data-i18n="about.title">About</h2>
+        </div>
+      </div>
+
+      <div class="about__body">
+        <figure class="about__photo reveal">
+          <img src="images/thumb/08.jpg" alt="" loading="lazy">
+        </figure>
+
+        <div class="about__text reveal">
+          <p class="lead" data-i18n="about.p1">I'm Olena — a product photographer and retoucher from Ukraine.</p>
+          <p data-i18n="about.p2">I work with beauty, fragrance, jewellery and fashion brands — from the first light test in the studio to the final pixel of retouch. Every frame is built around one idea: the object should look exactly the way it feels in your hands.</p>
+          <p data-i18n="about.p3">Glass that holds the light, metal without a single stray reflection, powder you can almost smell, colour that matches the packaging. I shoot and retouch myself, so the image is planned as a whole from the very beginning.</p>
+
+          <ul class="stats">
+            <li><b>08</b><span class="mono" data-i18n="stats.works">In archive</span></li>
+            <li><b>04</b><span class="mono" data-i18n="stats.cats">Categories</span></li>
+            <li><b>’26</b><span class="mono" data-i18n="stats.season">Season</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="services">
+        <p class="mono act__label reveal" data-i18n="services.label">Services</p>
+        <ol class="services__list">
+          <li class="reveal"><span class="mono">01</span><h3 data-i18n="services.s1">Product photography</h3><p data-i18n="services.s1d">Cosmetics, perfume, jewellery and accessories in the studio.</p></li>
+          <li class="reveal"><span class="mono">02</span><h3 data-i18n="services.s2">High-end retouch</h3><p data-i18n="services.s2d">Clean surfaces, controlled reflections, accurate colour.</p></li>
+          <li class="reveal"><span class="mono">03</span><h3 data-i18n="services.s3">E-commerce packshots</h3><p data-i18n="services.s3d">Consistent white- and colour-background series for stores.</p></li>
+          <li class="reveal"><span class="mono">04</span><h3 data-i18n="services.s4">Concept &amp; set design</h3><p data-i18n="services.s4d">Textures, props and light ideas for campaigns and social media.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <p class="mono act__label reveal" data-i18n="contact.label">Contact</p>
+      <h2 class="contact__title reveal" data-i18n-html="contact.title">If you want your product to look the way it <em>feels</em> — get in touch</h2>
+      <!-- TODO: replace the placeholders below with real contacts -->
+      <div class="contact__links reveal">
+        <a href="mailto:email@example.com">email@example.com</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://t.me/" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__logo" data-i18n="name">Olena</span>
+    <span class="mono" data-i18n="footer.rights">© 2026 — All rights reserved</span>
+    <a href="#top" class="mono" data-i18n="footer.top">Back to top ↑</a>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image viewer">
+    <button type="button" class="lb__close mono" id="lbClose" data-i18n="lb.close">Close ✕</button>
+    <button type="button" class="lb__nav lb__prev" id="lbPrev" aria-label="Previous">←</button>
+    <figure class="lb__figure">
+      <img id="lbImg" src="" alt="">
+      <figcaption>
+        <span class="lb__title" id="lbTitle"></span>
+        <span class="mono lb__meta" id="lbMeta"></span>
+        <span class="mono lb__count" id="lbCount"></span>
+      </figcaption>
+    </figure>
+    <button type="button" class="lb__nav lb__next" id="lbNext" aria-label="Next">→</button>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
